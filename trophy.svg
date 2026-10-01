@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420">
+<rect width="420" height="420" rx="30" fill="#fffaf0"/>
+<path d="M140 70h140v40c0 56-31 104-70 104s-70-48-70-104z" fill="#ffd166" stroke="#c59a00" stroke-width="8"/>
+<path d="M140 95H88c0 44 18 69 58 75M280 95h52c0 44-18 69-58 75" fill="none" stroke="#c59a00" stroke-width="8" stroke-linecap="round"/>
+<rect x="180" y="214" width="60" height="52" rx="8" fill="#c59a00"/>
+<rect x="140" y="264" width="140" height="26" rx="10" fill="#132238"/>
+<rect x="118" y="288" width="184" height="34" rx="12" fill="#1d70f7"/>
+<text x="210" y="347" text-anchor="middle" font-size="34" font-family="Trebuchet MS" font-weight="bold" fill="#132238">MISSION COMPLETE</text>
+</svg>

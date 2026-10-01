@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420">
+<rect width="420" height="420" rx="30" fill="#f0f6ff"/>
+<path d="M126 90h92c30 0 42 16 42 40v40H146c-30 0-50 18-50 46s18 46 50 46h46v20h-74c-35 0-58-22-58-57v-52c0-49 26-83 66-83z" fill="#1d70f7"/>
+<circle cx="213" cy="117" r="8" fill="#fff"/>
+<path d="M294 330h-92c-30 0-42-16-42-40v-40h114c30 0 50-18 50-46s-18-46-50-46h-46v-20h74c35 0 58 22 58 57v52c0 49-26 83-66 83z" fill="#ffd166"/>
+<circle cx="207" cy="303" r="8" fill="#132238"/>
+<text x="210" y="386" text-anchor="middle" font-size="28" font-family="Trebuchet MS" font-weight="bold" fill="#132238">FLOWCHART → PYTHON</text>
+</svg>

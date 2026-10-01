@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360">
+<rect width="480" height="360" rx="28" fill="#e8f6ff"/>
+<rect x="40" y="40" width="150" height="72" rx="36" fill="#fff" stroke="#132238" stroke-width="8"/>
+<text x="115" y="85" text-anchor="middle" font-family="Trebuchet MS" font-size="24" font-weight="bold" fill="#132238">START</text>
+<rect x="260" y="40" width="150" height="72" rx="14" fill="#fff" stroke="#132238" stroke-width="8"/>
+<text x="335" y="85" text-anchor="middle" font-family="Trebuchet MS" font-size="24" font-weight="bold" fill="#132238">PROCESS</text>
+<polygon points="115,180 190,225 115,270 40,225" fill="#fff" stroke="#132238" stroke-width="8"/>
+<text x="115" y="232" text-anchor="middle" font-family="Trebuchet MS" font-size="22" font-weight="bold" fill="#132238">IF?</text>
+<polygon points="260,185 408,165 418,245 270,265" fill="#fff" stroke="#132238" stroke-width="8"/>
+<text x="338" y="223" text-anchor="middle" font-family="Trebuchet MS" font-size="24" font-weight="bold" fill="#132238">INPUT / OUTPUT</text>
+</svg>

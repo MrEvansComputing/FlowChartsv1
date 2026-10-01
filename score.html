@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlowQuest Score</title><link rel="stylesheet" href="style.css"><script src="app.js"></script>
+</head><body>
+<div id="siteHeader"></div>
+<main class="wrap">
+  <section class="score-hero">
+    <img class="score-trophy" src="trophy.svg" alt="FlowQuest trophy">
+    <p>Your FlowQuest score</p>
+    <div class="score-number" id="finalXP">0</div>
+    <p>XP out of 600</p>
+    <div class="rank-pill" id="finalRank">Rookie Coder</div>
+  </section>
+
+  <section class="score-grid">
+    <div class="score-card"><div class="num" id="missionsDone">0</div><div class="lab">Missions completed</div></div>
+    <div class="score-card"><div class="num" id="percentDone">0%</div><div class="lab">Quest progress</div></div>
+    <div class="score-card"><div class="num" id="statusText">In progress</div><div class="lab">Status</div></div>
+  </section>
+
+  <section class="card" style="margin-top:18px">
+    <h3>Mission record</h3>
+    <div class="mission-strip" id="missionStrip"></div>
+    <div id="scoreMessage" class="note" style="margin-top:18px"></div>
+    <div class="pager">
+      <a class="btn alt" href="index.html">Back to mission map</a>
+      <button class="btn red" onclick="fqReset()">Reset game</button>
+    </div>
+  </section>
+</main>
+<div id="siteFooter"></div>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const done=flowState.done.length;
+  document.getElementById('finalXP').textContent=flowState.xp;
+  document.getElementById('finalRank').textContent=fqRank();
+  document.getElementById('missionsDone').textContent=`${done}/6`;
+  document.getElementById('percentDone').textContent=`${Math.round((done/6)*100)}%`;
+  document.getElementById('statusText').textContent=done===6?'Complete':'In progress';
+  document.getElementById('missionStrip').innerHTML=[1,2,3,4,5,6].map(n=>`<div class="mission-chip ${flowState.done.includes(n)?'done':''}">Mission ${n}${flowState.done.includes(n)?' ✓':''}</div>`).join('');
+  const msg=document.getElementById('scoreMessage');
+  if(done===6){
+    msg.innerHTML='<strong>FlowQuest complete!</strong> You have completed all six missions and reached <strong>Flowchart Master</strong> rank.';
+    setTimeout(fqCelebrate,350);
+  }else if(done>=4){msg.innerHTML='<strong>Nearly there.</strong> Finish the remaining missions to unlock the final Flowchart Master rank.';}
+  else if(done>=2){msg.innerHTML='<strong>Good progress.</strong> Your XP is building — keep moving through the mission map.';}
+  else{msg.innerHTML='<strong>Quest just started.</strong> Complete Mission 1 to begin earning XP.';}
+});
+</script>
+</body></html>

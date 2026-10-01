@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlowQuest</title><link rel="stylesheet" href="style.css"><script src="app.js"></script>
+</head><body>
+<div id="siteHeader"></div>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <h2>Complete missions. Earn XP. Level up your flowchart skills.</h2>
+      <p>FlowQuest is a gamified challenge zone for students who finish the main worksheet. Each mission focuses on the same classroom skills: symbols, sequence, input–process–output, decisions, repetition and a small preview of Python.</p>
+      <div class="badgebar">
+        <span class="badge">6 missions</span>
+        <span class="badge">100 XP each</span>
+        <span class="badge">Unlock in order</span>
+        <span class="badge">Saves progress in browser</span>
+      </div>
+      <div class="note"><strong>Teacher note:</strong> students can start on Mission 1 and work forward independently while the rest of the class finishes the worksheet.</div>
+    </div>
+    <img src="hero-flowchart.svg" alt="Colourful flowchart illustration">
+  </section>
+  <div class="level-banner"><strong>Current rank: <span id="rankText">Rookie Coder</span></strong><a class="btn green" href="score.html">Open score screen</a></div>
+
+  <h2 class="section-title">Mission map</h2>
+  <section class="cardgrid">
+    <article class="card" id="card1">
+      <img class="thumb" src="symbols.svg" alt="Flowchart symbols">
+      <h3>Mission 1: Symbol Scanner</h3>
+      <div class="meta"><span class="chip">100 XP</span><span class="chip">Warm-up</span></div>
+      <p>Match the flowchart symbols to their jobs.</p>
+      <a class="btn" href="mission1.html">Open mission</a>
+    </article>
+    <article class="card locked" id="card2">
+      <img class="thumb" src="detective.svg" alt="Detective with magnifying glass">
+      <h3>Mission 2: Broken Flowchart</h3>
+      <div class="meta"><span class="chip">100 XP</span><span class="chip">Bug hunt</span></div>
+      <p>Spot the big mistake in a broken flowchart.</p>
+      <a class="btn" href="mission2.html" data-requires="1">Open mission</a>
+    </article>
+    <article class="card locked" id="card3">
+      <img class="thumb" src="robot.svg" alt="Robot illustration">
+      <h3>Mission 3: Robot Delivery</h3>
+      <div class="meta"><span class="chip">100 XP</span><span class="chip">Sequence</span></div>
+      <p>Program the robot so it reaches the goal safely.</p>
+      <a class="btn" href="mission3.html" data-requires="2">Open mission</a>
+    </article>
+    <article class="card locked" id="card4">
+      <img class="thumb" src="detective.svg" alt="Detective illustration">
+      <h3>Mission 4: Flowchart Detective</h3>
+      <div class="meta"><span class="chip">100 XP</span><span class="chip">Selection</span></div>
+      <p>Work out what a mystery flowchart actually does.</p>
+      <a class="btn" href="mission4.html" data-requires="3">Open mission</a>
+    </article>
+    <article class="card locked" id="card5">
+      <img class="thumb" src="race.svg" alt="Race illustration">
+      <h3>Mission 5: Algorithm Race</h3>
+      <div class="meta"><span class="chip">100 XP</span><span class="chip">Timed</span></div>
+      <p>Order the algorithm steps before the timer runs out.</p>
+      <a class="btn" href="mission5.html" data-requires="4">Open mission</a>
+    </article>
+    <article class="card locked" id="card6">
+      <img class="thumb" src="python.svg" alt="Python illustration">
+      <h3>Mission 6: Boss Level</h3>
+      <div class="meta"><span class="chip">100 XP</span><span class="chip">Preview</span></div>
+      <p>Use a simple flowchart to choose the correct Python line.</p>
+      <a class="btn" href="mission6.html" data-requires="5">Open mission</a>
+    </article>
+  </section>
+</main>
+<div id="siteFooter"></div>
+</body></html>
